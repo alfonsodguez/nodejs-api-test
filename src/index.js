@@ -1,5 +1,5 @@
-import { app, connectDB } from './infrastructure/server/app';
-import { PORT } from './infrastructure/server/config';
+import { app, connectDB } from './infrastructure/server/app.js';
+import { PORT } from './infrastructure/server/config.js';
 
 (async () => {
     await connectDB();
