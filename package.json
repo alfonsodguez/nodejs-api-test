@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-api-test",
+  "version": "1.0.0",
+  "description": "Technical nodejs api test",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env index.js",
+    "test": "mocha --recursive",
+    "commit": "cz"
+  },
+  "keywords": [],
+  "author": "Alfonso Cobelas",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "mongo": "0.1.0",
+    "mongoose": "8.10.1",
+    "uuid": "11.0.5"
+  },
+  "devDependencies": {
+    "chai": "5.2.0",
+    "commitizen": "4.3.1",
+    "cz-conventional-changelog": "3.3.0",
+    "mocha": "11.1.0",
+    "sinon": "19.0.2",
+    "sinon-chai": "4.0.0"
+  },
+  "engines": {
+    "npm": ">=10.8.0 <11.0.0",
+    "node": ">=20.0.0 <21.0.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
